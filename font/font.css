@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Lush-Regular';
+  src: url('Lush-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lush';
+  src: url('Lush.eot');
+  src: url('Lush.woff2') format('woff2'),
+       url('Lush.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

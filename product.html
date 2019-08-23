@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>이지원 기말, "LUSH" 웹 사이트 리뉴얼</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/product.css"/>
+    <link rel="stylesheet" href="./css/normalize.min.css"/>
+</head>
+<body>
+    <header>
+        <!-- 로고 -->
+        <a href="index.html" class="logo"><img src="./img/logo.png"/></a>
+        <!-- 메인 메뉴 (상품, 소개) -->
+        <ul id="main_menu">
+            <li><a href="#">BEST</a></li>
+            <li><a href="product.html">Bath</a>
+                <ul>
+                    <li><a href="#">배쓰 밤</a></li>
+                    <li><a href="#">버블 바</a></li>
+                    <li><a href="#">배쓰 오일</a></li>
+                    <li><a href="#">펀</a></li>
+                    <li><a href="#">젤리 밤</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Shower</a>
+                <ul>
+                    <li><a href="#">솝</a></li>
+                    <li><a href="#">샤워 젤 &amp; 젤리</a></li>
+                    <li><a href="#">스무디 &amp; 컨디셔너</a></li>
+                    <li><a href="#">스크럽 &amp; 버터</a></li>
+                    <li><a href="#">펀</a></li>
+                    <li><a href="#">바디 스프레이</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Body</a>
+                <ul>
+                    <li><a href="#">클렌저</a></li>
+                    <li><a href="#">로션</a></li>
+                    <li><a href="#">핸드 앤 풋</a></li>
+                    <li><a href="#">마사지 바</a></li>
+                    <li><a href="#">바디 스프레이</a></li>
+                    <li><a href="#">더스팅 파우더</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Face</a>
+                <ul>
+                    <li><a href="#">클렌저</a></li>
+                    <li><a href="#">토너</a></li>
+                    <li><a href="#">모이스춰라이저</a></li>
+                    <li><a href="#">페이스 마스크</a></li>
+                    <li><a href="#">립</a></li>
+                    <li><a href="#">쉐이빙 크림</a></li>
+                    <li><a href="#">프라이머</a></li>
+                    <li><a href="#">젤리 마스크</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Hair</a>
+                <ul>
+                    <li><a href="#">샴푸 바</a></li>
+                    <li><a href="#">샴푸</a></li>
+                    <li><a href="#">드라이 샴푸</a></li>
+                    <li><a href="#">컨디셔너</a></li>
+                    <li><a href="#">트리트먼트</a></li>
+                    <li><a href="#">스타일링</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Makeup</a>
+                <ul>
+                    <li><a href="#">페이스</a></li>
+                    <li><a href="#">아이즈</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Perfume</a>
+                <ul>
+                    <li><a href="#">블랙 라벨</a></li>
+                    <li><a href="#">화이트 리퀴드</a></li>
+                    <li><a href="#">화이트 솔리드</a></li>
+                    <li><a href="#">워시 카드</a></li>
+                    <li><a href="#">퍼퓸 낫랩</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Gifts</a>
+                <ul>
+                    <li><a href="#">러쉬 세트</a></li>
+                    <li><a href="#">악세서리</a></li>
+                    <li><a href="#">낫랩</a></li>
+                    <li><a href="#">스웨그</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Promotion</a>
+                <ul>
+                    <li><a href="#">온라인 전용</a></li>
+                    <li><a href="#">신제품</a></li>
+                    <li><a href="#">선물하면 LUSH</a></li>
+                    <li><a href="#">로즈</a></li>
+                    <li><a href="#">후기</a></li>
+                    <li><a href="#">국내제조제품</a></li>
+                    <li><a href="#">러브에디션</a></li>
+                    <li><a href="#">이스터 에디션</a></li>
+                    <li><a href="#">땡큐 에디션</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a>
+                <ul>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">ZOOMIN</a></li>
+                    <li><a href="campaign.html">캠페인</a></li>
+                    <li><a href="#">LUSH VIDEO</a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="#" id="search"><img src="./img/search.png"/></a>
+    </header>
+    <aside>
+        <!-- QuickBox (바로가기 및 최근 본 상품) -->
+        <div class="quickBox">
+            <ul>
+                <li><a href="#">Quick</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i>MY LUSH</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i>장바구니</a></li>
+                <li><a href="#"><i class="fas fa-truck"></i>주문배송</a></li>
+                <li><a href="#"><i class="fas fa-bullhorn"></i>고객센터</a></li>
+                <li>
+                    <p>최근 본 상품</p>
+                    <img src="img/bath2.png"/>
+                </li>
+            </ul>
+            <div class="np_btn">
+                <span class="ne"><a href="#">&lt;</a></span>
+                <span class="pr"><a href="#">&gt;</a></span>
+            </div>
+        </div>
+        <!-- Main Video -->
+        <div class="product_main">
+            <video width="100%" height="100%" autoplay loop poster="img/video.PNG">
+                <source src="./img/Lush.mp4">
+            </video>
+        </div>
+        <!-- 관련 이벤트 배너 -->
+        <div class="eve_banner">
+            <ul class="eve_right">
+                <li><a href="#slide-one">Limited</a></li>
+                <li><a href="#slide-two">New</a></li>
+            </ul>
+            <div class="eve_left">
+                <div id="section-wrapper-content" class="">
+                    <div class="slide slide-one">
+                        <div class="e_text">
+                            <h2>Limited Edition</h2>
+                            <p>
+                                지금 이 때만 등장하는<br/>
+                                한정판 스피너를 만나보세요!
+                            </p>
+                        </div>
+                        <img src="./img/pro_main1.jpg"/>
+                    </div>
+                    <div class="slide slide-two">
+                        <div class="e_text">
+                            <h2>New product</h2>
+                            <p>
+                                러쉬의 색다른 도전! <br/>
+                                새로운 향과 부드러움을 선사합니다. 
+                            </p>
+                        </div>
+                        <img src="./img/pro_main2.jpg"/>
+                    </div>             
+                </div>
+            </div>
+        </div>
+    </aside>
+    <section>
+        <!-- 상품 목록 페이지 -->
+        <div class="product">
+        <div class="title">
+            <p class="text">Bath</p>
+            <!-- Tab Menu -->
+            <ul id="tabmenu" class="tabmenu">
+                <li><a class="tabbtn active">Bath</a></li>
+                <li><a class="tabbtn">Bath Bomb</a></li>
+                <li><a class="tabbtn">Bubble Bars</a></li>
+                <li><a class="tabbtn">Bath Oils</a></li>
+                <li><a class="tabbtn">Fun</a></li>
+                <li><a class="tabbtn">Jelly Bomb</a></li>
+            </ul>
+        </div>
+        <div class="bath_info">
+            <p>풍부한 에센셜 오일의 향기롭고 부드러운 입욕</p>
+            <!-- Select Box -->
+            <select name="align">
+                <option value="1">신상품 순</option>
+                <option value="2">판매량 순</option>
+                <option value="3">낮은 금액 순</option>
+                <option value="4">높은 금액 순</option>
+            </select>
+        </div>
+        <div class="tabbox">
+            <div class="box selected" id="work01">
+                <ul class="product_box">
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath1.gif" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                        <span class="product_name">펀 포 올 더 패밀리</span>    
+                                        <p>Bubble Spinner</p>                                            
+                                        <div class="product-options">
+                                            <span class="limit">한정판</span>
+                                            <strong>￦ 16,000</strong>
+                                            <p>
+                                                상큼한 라임과 달콤한 오렌지 오일로 <br/>
+                                                취향 저격!
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath2.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                        <span class="product_name">더 맛파더</span>    
+                                        <p>Bubble Bar</p>                                            
+                                        <div class="product-options">
+                                            <span class="limit">한정판</span>
+                                            <strong>￦ 14,000</strong>
+                                            <p>
+                                                상큼한 브라질 오렌지 오일이 담긴<br/>
+                                                앙증맞은 버블 바는 활력을 불어 넣어드립니다.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath3.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class="product_name">슈퍼대드</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 14,000</strong>
+                                            <p>
+                                                신선한 샌달우드와 편안한 올리바늄이<br/>
+                                                듬뿍 담긴 밤으로 우울한 하루를 날려보세요!
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath4.gif" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                        <span class="product_name">맘 인 어 스핀</span>    
+                                        <p>Bubble Spinner</p>                                            
+                                        <div class="product-options">
+                                            <span class="limit">한정판</span>
+                                            <strong>￦ 18,000</strong>
+                                            <p>
+                                                바쁜 당신에게 편안한 라벤더와 통카 거품이<br/>
+                                                포근한 휴식을 선물합니다.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath5.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class=".product_name_1">시트러스 아 두잉 잇 포 뎀셀브즈</span>    
+                                        <p>Bubbleroom</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 14,000</strong>
+                                            <p>
+                                                상큼한 레몬과 자몽 오일이<br/>
+                                                흐르는 물과 만나면 맛있는 입욕 뚝딱!
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath6.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class="product_name">마더 오브 펄</span>    
+                                        <p>Bubbleroom</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 14,000</strong>
+                                            <p>
+                                                꽃내음 가득 머금은 미모사와 쉐어버터가<br/>
+                                                부드러운 피부로 가꾸어 줍니다.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath7.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class="product_name">퍼플 드레인</span>    
+                                        <p>Bubbleroom</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 14,000</strong>
+                                            <p>
+                                                지친 오늘은 따듯한 정향,<br/>
+                                                후추 오일과 무루무루 버터와 함께하세요.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath8.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                        <span class="product_name">바아 바</span>    
+                                        <p>Bubble Bar</p>                                            
+                                        <div class="product-options">
+                                            <span class="limit">한정판</span>
+                                            <strong>￦ 14,000</strong>
+                                            <p>
+                                                편안한 라벤더 오일, 통카와 일랑일랑이<br/>
+                                                당신을 포근하게 감싸 안아줄게요!
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath9.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                        <span class=".product_name_1">맘 룩 왓 아이 메이드 유</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span class="limit">한정판</span>
+                                            <strong>￦ 13,000</strong>
+                                            <p>
+                                                부드러운 코코넛 우유 파우더가<br/>
+                                                열대 향기 가득한 휴가로 당신을 초대합니다!
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath10.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class="product_name">마담 프레지던트</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 14,000</strong>
+                                            <p>
+                                                신선한 자몽으로 사랑하는 엄마에게<br/>
+                                                상큼함과 상쾌함을 선사하세요.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath11.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class="product_name">인크레더블 맘</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 12,000</strong>
+                                            <p>
+                                                오렌지, 베르가못과 일랑일랑과 함께라면 <br/>
+                                                무서울 게 없죠!
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath12.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                        <span class="product_name">퍼즈</span>    
+                                        <p>Bath Oil</p>                                            
+                                        <div class="product-options">
+                                            <span class="new">신상품</span>
+                                            <strong>￦ 7,000</strong>
+                                            <p>
+                                                네롤리 오일과 엘더 플라워의 멜로디가 닿으면<br/>
+                                                욕조에 한 송이 꽃이 피어날지도 몰라요!
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box" id="work02">
+                <ul class="product_box">
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath3.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class="product_name">슈퍼대드</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 14,000</strong>
+                                            <p>
+                                                신선한 샌달우드와 편안한 올리바늄이<br/>
+                                                듬뿍 담긴 밤으로 우울한 하루를 날려보세요!
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath9.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                        <span class=".product_name_1">맘 룩 왓 아이 메이드 유</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span class="limit">한정판</span>
+                                            <strong>￦ 13,000</strong>
+                                            <p>
+                                                부드러운 코코넛 우유 파우더가<br/>
+                                                열대 향기 가득한 휴가로 당신을 초대합니다!
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath10.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class="product_name">마담 프레지던트</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 14,000</strong>
+                                            <p>
+                                                신선한 자몽으로 사랑하는 엄마에게<br/>
+                                                상큼함과 상쾌함을 선사하세요.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath11.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class="product_name">인크레더블 맘</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 12,000</strong>
+                                            <p>
+                                                오렌지, 베르가못과 일랑일랑과 함께라면 <br/>
+                                                무서울 게 없죠!
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bomb5.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class="product_name">프리 레인저스</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 18,000</strong>
+                                            <p>
+                                                위 혹은 아래? 어떤 부분이든 신나고 재미있는 <br/>
+                                                입욕 시간을 선물할 거에요.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bomb6.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class="product_name">프리 레인저스</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span>
+                                            <strong>￦ 18,000</strong>
+                                            <p>
+                                                위 혹은 아래? 어떤 부분이든 신나고 재미있는 <br/>
+                                                입욕 시간을 선물할 거에요.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bomb7.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                        <span class="product_name">프리 레인저스</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span><br/><br/></span>
+                                            <strong>￦ 18,000</strong>
+                                            <p>
+                                                위 혹은 아래? 어떤 부분이든 신나고 재미있는 <br/>
+                                                입욕 시간을 선물할 거에요.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bomb8.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                        <span class="product_name">에이프릴 샤워스</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span><br/><br/></span>
+                                            <strong>￦ 13,000</strong>
+                                            <p>
+                                                4월의 소나기처럼 목마른 피부에 <br/>
+                                                부드러움을 내려줄 배쓰밤
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bomb9.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class="product_name">러브 보트</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 12,000</strong>
+                                            <p>
+                                                달콤한 오렌지와 시칠리아산 레몬 오일을 담은<br/>
+                                                배쓰밤이 사랑을 전할 준비를 완료했어요!
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bomb10.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class="product_name">티스티 토스티</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 10,000</strong>
+                                            <p>
+                                                장미꽃 봉오리가 한가득 모여<br/>
+                                                사랑을 꽃피워드립니다.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bomb11.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class=".product_name_1">자이언트 로즈 밤쉘</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 43,000</strong>
+                                            <p>
+                                                아름다운 노란 장미 꽃잎이<br/>
+                                                당신의 욕조를 채울 거예요.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bomb12.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                        <span class="product_name">드래곤스 에그</span>    
+                                        <p>Bath Bomb</p>                                            
+                                        <div class="product-options">
+                                            <span><br/><br/></span>
+                                            <strong>￦ 12,000</strong>
+                                            <p>
+                                                욕조 가득 채워지는 오렌지 골드의 은은함이<br/>
+                                                당신의 입욕에 설렘을 안겨줍니다.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box" id="work03">
+                <ul class="product_box">
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath1.gif" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                        <span class="product_name">펀 포 올 더 패밀리</span>    
+                                        <p>Bubble Spinner</p>                                            
+                                        <div class="product-options">
+                                            <span class="limit">한정판</span>
+                                            <strong>￦ 16,000</strong>
+                                            <p>
+                                                상큼한 라임과 달콤한 오렌지 오일로 <br/>
+                                                취향 저격!
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath2.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                        <span class="product_name">더 맛파더</span>    
+                                        <p>Bubble Bar</p>                                            
+                                        <div class="product-options">
+                                            <span class="limit">한정판</span>
+                                            <strong>￦ 14,000</strong>
+                                            <p>
+                                                상큼한 브라질 오렌지 오일이 담긴<br/>
+                                                앙증맞은 버블 바는 활력을 불어 넣어드립니다.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath4.gif" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                        <span class="product_name">맘 인 어 스핀</span>    
+                                        <p>Bubble Spinner</p>                                            
+                                        <div class="product-options">
+                                            <span class="limit">한정판</span>
+                                            <strong>￦ 18,000</strong>
+                                            <p>
+                                                바쁜 당신에게 편안한 라벤더와 통카 거품이<br/>
+                                                포근한 휴식을 선물합니다.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath5.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class=".product_name_1">시트러스 아 두잉 잇 포 뎀셀브즈</span>    
+                                        <p>Bubbleroom</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 14,000</strong>
+                                            <p>
+                                                상큼한 레몬과 자몽 오일이<br/>
+                                                흐르는 물과 만나면 맛있는 입욕 뚝딱!
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath6.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class="product_name">마더 오브 펄</span>    
+                                        <p>Bubbleroom</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 14,000</strong>
+                                            <p>
+                                                꽃내음 가득 머금은 미모사와 쉐어버터가<br/>
+                                                부드러운 피부로 가꾸어 줍니다.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath7.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                        <span class="product_name">퍼플 드레인</span>    
+                                        <p>Bubbleroom</p>                                            
+                                        <div class="product-options">
+                                            <span class="non">품절</span><span class="limit">한정판</span>
+                                            <strong>￦ 14,000</strong>
+                                            <p>
+                                                지친 오늘은 따듯한 정향,<br/>
+                                                후추 오일과 무루무루 버터와 함께하세요.
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="product-front">
+                                <div class="shadow"></div>
+                                <img src="./img/bath8.png" alt="" />
+                                <div class="image_overlay"></div>
+                                <div class="view_details">View details</div>
+                                <div class="stats">        	
+                                    <div class="stats-container">
+                                        <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                        <span class="product_name">바아 바</span>    
+                                        <p>Bubble Bar</p>                                            
+                                        <div class="product-options">
+                                            <span class="limit">한정판</span>
+                                            <strong>￦ 14,000</strong>
+                                            <p>
+                                                편안한 라벤더 오일, 통카와 일랑일랑이<br/>
+                                                당신을 포근하게 감싸 안아줄게요!
+                                            </p>
+                                        </div>                       
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/bars8.gif" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">세븐 데들리 스핀즈</span>    
+                                            <p>Bubble Bar</p>                                            
+                                            <div class="product-options">
+                                                <span class="limit">한정판</span>
+                                                <strong>￦ 16,000</strong>
+                                                <p>
+                                                    욕조 가득 차오르는 황금빛 거품이 당신에게<br/>
+                                                    평화로움과 편안함을 선사할 거에요!
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/bars9.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                            <span class="product_name">번치 오브 캐럿츠</span>    
+                                            <p>Bubble Bar</p>                                            
+                                            <div class="product-options">
+                                                <span class="non">품절</span><span class="limit">한정판</span>
+                                                <strong>￦ 16,000</strong>
+                                                <p>
+                                                    신선하고 앙증맞은 당근이 왔어요!<br/>
+                                                    싱싱한 당근이 상큼한 거품을 채워줄 거예요!
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/bars10.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">크림 에그</span>    
+                                            <p>Bubble Bar</p>                                            
+                                            <div class="product-options">
+                                                <span class="limit">한정판</span>
+                                                <strong>￦ 12,000</strong>
+                                                <p>
+                                                    스피어민트와 공정하게 얻은 코코아 버터 듬뿍<br/>
+                                                    담긴 버블룬 한 움큼 물 아래 놓아주세요.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/bars11.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                            <span class="product_name">크림 에그</span>    
+                                            <p>Bubble Bar</p>                                            
+                                            <div class="product-options">
+                                                <span class="non">품절</span><span class="limit">한정판</span>
+                                                <strong>￦ 12,000</strong>
+                                                <p>
+                                                    스피어민트와 공정하게 얻은 코코아 버터 듬뿍<br/>
+                                                    담긴 버블룬 한 움큼 물 아래 놓아주세요.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/bars12.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                            <span class="product_name">크림 에그</span>    
+                                            <p>Bubble Bar</p>                                            
+                                            <div class="product-options">
+                                                <span class="non">품절</span><span class="limit">한정판</span>
+                                                <strong>￦ 12,000</strong>
+                                                <p>
+                                                    스피어민트와 공정하게 얻은 코코아 버터 듬뿍<br/>
+                                                    담긴 버블룬 한 움큼 물 아래 놓아주세요.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box" id="work04">
+                    <ul class="product_box">
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/bath12.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">퍼즈</span>    
+                                            <p>Bath Oil</p>                                            
+                                            <div class="product-options">
+                                                <span class="new">신상품</span>
+                                                <strong>￦ 7,000</strong>
+                                                <p>
+                                                    네롤리 오일과 엘더 플라워의 멜로디가 닿으면<br/>
+                                                    욕조에 한 송이 꽃이 피어날지도 몰라요!
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/oils2.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">플라워스 배로우</span>    
+                                            <p>Bath Oil</p>                                            
+                                            <div class="product-options">
+                                                <span class="new">신상품</span>
+                                                <strong>￦ 7,000</strong>
+                                                <p>
+                                                    로마 카모마일 오일이 듬뿍 담겨<br/>
+                                                    황홀한 향기를 남깁니다.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/oils3.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">레벨래이션스</span>    
+                                            <p>Bath Oil</p>                                            
+                                            <div class="product-options">
+                                                <span class="new">신상품</span>
+                                                <strong>￦ 7,000</strong>
+                                                <p>
+                                                    쉐어버터와 코코아버터의 만남은 환상의<br/>
+                                                    부드러움을 피부에 안겨드립니다.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/oils4.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">래즐 대즐</span>    
+                                            <p>Bath Oil</p>                                            
+                                            <div class="product-options">
+                                                <span class="new">신상품</span>
+                                                <strong>￦ 7,000</strong>
+                                                <p>
+                                                    마치 라즈베리 아이스크립 같아요.<br/>
+                                                    베르가못과 페르시안 라임이 만든 촉촉함!
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/oils5.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">폴리아모러스</span>    
+                                            <p>Bath Oil</p>                                            
+                                            <div class="product-options">
+                                                <span class="new">신상품</span>
+                                                <strong>￦ 7,000</strong>
+                                                <p>
+                                                    따듯한 욕조에 사랑스러운 배쓰 오일을<br/>
+                                                    퐁당 떨어뜨려주세요.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/oils6.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">해피 또우츠</span>    
+                                            <p>Bath Oil</p>                                            
+                                            <div class="product-options">
+                                                <span class="new">신상품</span>
+                                                <strong>￦ 7,000</strong>
+                                                <p>
+                                                    브라질 오일과 네롤리 오일의 부드러움이<br/>
+                                                    피부에 깊숙이 닿아 건조함을 날려줄 거예요.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/oils7.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">진저</span>    
+                                            <p>Bath Oil</p>                                            
+                                            <div class="product-options">
+                                                <span class="new">신상품</span>
+                                                <strong>￦ 7,000</strong>
+                                                <p>
+                                                    코코아버터, 쉐어버터, 호호바와 코코넛오일의<br/>
+                                                    만남은 최상의 부드러움을 선사합니다.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/oils8.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">더블 바이탈리티</span>    
+                                            <p>Bath Oil</p>                                            
+                                            <div class="product-options">
+                                                <span class="new">신상품</span>
+                                                <strong>￦ 7,000</strong>
+                                                <p>
+                                                    쉐어 버터를 머금은 별 모양의 배쓰 오일이<br/>
+                                                    당신에게 천사보다 황홀한 부드러움을 줄 거예요!
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/oils9.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">딜라이트</span>    
+                                            <p>Bath Oil</p>                                            
+                                            <div class="product-options">
+                                                <span class="new">신상품</span>
+                                                <strong>￦ 7,000</strong>
+                                                <p>
+                                                    상큼한 라임과 풍미 깊은 블랙 페퍼 오일이<br/>
+                                                    듬뿍 담긴 배쓰 오일로 하루를 시작해보세요.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/oils10.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name_1">클로크 오브 인비지빌리티</span>    
+                                            <p>Bath Oil</p>                                            
+                                            <div class="product-options">
+                                                <span class="new">신상품</span>
+                                                <strong>￦ 7,000</strong>
+                                                <p>
+                                                    아무와도 말하고 싶지 않은 그런 날,<br/>
+                                                    쟈스민과 일랑일랑 오일이 만든 행복을 느껴요!
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/oils11.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">배쓰 오일 박스</span>    
+                                            <p>Bath Oil</p>                                            
+                                            <div class="product-options">
+                                                <span><br/><br/></span>
+                                                <strong>￦ 2,500</strong>
+                                                <p>
+                                                    즐거운 목욕 시간을 위해 다양한<br/>
+                                                    배쓰 오일을 박스 안에 담아 보세요!
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/oils12.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">드림타임</span>    
+                                            <p>Bath Oil</p>                                            
+                                            <div class="product-options">
+                                                <span><br/><br/></span>
+                                                <strong>￦ 7,000</strong>
+                                                <p>
+                                                    카모마일과 라벤더, 생강 오일을 듬뿍 담은<br/>
+                                                    배쓰 멜트는 지친 몸과 마음을 어루만져줍니다.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box" id="work05">
+                    <ul class="product_box">
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/fun1.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-bell"></i></a></span>
+                                            <span class="product_name">레인보우</span>    
+                                            <p>Fun</p>                                            
+                                            <div class="product-options">
+                                                <span class="non">품절</span>
+                                                <strong>￦ 18,000</strong>
+                                                <p>
+                                                    손바닥 위에서 쾌활하게 퍼지는 <br/>
+                                                    라임과 자몽, 바닐라, 카모마일 향기!
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/fun2.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">몬스터스&amp;에일리언스</span>    
+                                            <p>Fun</p>                                            
+                                            <div class="product-options">
+                                                <span><br/><br/></span>
+                                                <strong>￦ 18,000</strong>
+                                                <p>
+                                                    중력이 당신을 끌어당기고 있어요!<br/>
+                                                    앗, 당신의 상상력을 뺏기지 않게 조심하세요.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/fun3.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">펀 옐로우</span>    
+                                            <p>Fun</p>                                            
+                                            <div class="product-options">
+                                                <span class="limit">온라인전용</span>
+                                                <strong>￦ 15,000</strong>
+                                                <p>
+                                                    놀이, 샴푸, 비누, 거품 입욕제를 하나로!<br/>
+                                                    포근하고 따뜻한 바닐라 향기를 채워줍니다.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/fun4.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">펀 레드</span>    
+                                            <p>Fun</p>                                            
+                                            <div class="product-options">
+                                                <span class="limit">온라인전용</span>
+                                                <strong>￦ 15,000</strong>
+                                                <p>
+                                                    놀이, 샴푸, 비누, 거품 입욕제를 하나로!<br/>
+                                                    햇살처럼 눈부시고 활기찬 즐거움을 담았어요!
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/fun5.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">펀 핑크</span>    
+                                            <p>Fun</p>                                            
+                                            <div class="product-options">
+                                                <span class="limit">온라인전용</span>
+                                                <strong>￦ 15,000</strong>
+                                                <p>
+                                                    놀이, 샴푸, 비누, 거품 입욕제를 하나로!<br/>
+                                                    군침 돌만큼 먹음직스러운 달콤함을 뭉쳤어요.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/fun6.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">펀 그린</span>    
+                                            <p>Fun</p>                                            
+                                            <div class="product-options">
+                                                <span class="limit">온라인전용</span>
+                                                <strong>￦ 15,000</strong>
+                                                <p>
+                                                    놀이, 샴푸, 비누, 거품 입욕제를 하나로!<br/>
+                                                    신선한 레몬, 라임의 상큼함을 녹였습니다.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/fun7.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">펀 블루</span>    
+                                            <p>Fun</p>                                            
+                                            <div class="product-options">
+                                                <span class="limit">온라인전용</span>
+                                                <strong>￦ 15,000</strong>
+                                                <p>
+                                                    놀이, 샴푸, 비누, 거품 입욕제를 하나로!<br/>
+                                                    캐모마일, 라벤더의 편안함을 대표합니다.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box" id="work06">
+                    <ul class="product_box">
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/jelly1.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">터틀 젤리 밤</span>    
+                                            <p>Jelly Bomb</p>                                            
+                                            <div class="product-options">
+                                                <span><br/><br/></span>
+                                                <strong>￦ 18,000</strong>
+                                                <p>
+                                                    바다에 떠다니는 플라스틱 쓰레기로 아파하는<br/>
+                                                    우리의 거북이를 구해주세요!
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/jelly2.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">더 빅 슬립</span>    
+                                            <p>Jelly Bomb</p>                                            
+                                            <div class="product-options">
+                                                <span><br/><br/></span>
+                                                <strong>￦ 18,000</strong>
+                                                <p>
+                                                    알람 시계를 끄고 다시 꿈속으로 갈 시간<br/>
+                                                    향긋한 라벤더와 달콤한 통카 앱솔루트의 향기로운 자장가
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/jelly3.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">마멀레이드</span>    
+                                            <p>Jelly Bomb</p>                                            
+                                            <div class="product-options">
+                                                <span><br/><br/></span>
+                                                <strong>￦ 18,000</strong>
+                                                <p>
+                                                    숨기지 않아도 괜찮아요.<br/>
+                                                    상큼한 오렌지와 자몽 오일이 우울함을 날려줄 거예요!
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/jelly4.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">그린 코코넛</span>    
+                                            <p>Jelly Bomb</p>                                            
+                                            <div class="product-options">
+                                                <span><br/><br/></span>
+                                                <strong>￦ 18,000</strong>
+                                                <p>
+                                                    환상적인 열대 섬으로 출발!<br/>
+                                                    시원한 바람을 타고 오는 열대과일의 향기를 느껴요.
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="product-front">
+                                    <div class="shadow"></div>
+                                    <img src="./img/jelly5.png" alt="" />
+                                    <div class="image_overlay"></div>
+                                    <div class="view_details">View details</div>
+                                    <div class="stats">        	
+                                        <div class="stats-container">
+                                            <span class="product_price"><a href="#"><i class="fas fa-cart-plus"></i></a></span>
+                                            <span class="product_name">시크릿 아츠</span>    
+                                            <p>Jelly Bomb</p>                                            
+                                            <div class="product-options">
+                                                <span><br/><br/></span>
+                                                <strong>￦ 18,000</strong>
+                                                <p>
+                                                    매혹적인 입욕 시간!<br/>
+                                                    상큼한 오렌지와 부드러운 아몬드 오일이 담겼어요!
+                                                </p>
+                                            </div>                       
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab_btn">
+                <div class="prev"><a>&lt;</a></div>
+                <div class="next"><a>&gt;</a></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- footer Menu -->
+        <div id="footer_left">
+            <div id="info_left">
+                <p>(주) 러쉬코리아 / 대표이사 : 우미령 <br/>
+                서울시 서초구 서초동 1321-6 서초동아타워 6층 <br/>
+                / 사업자 등록번호 : 201-81-77964 <br/>
+                / 통신판매업 신고번호 : 2012-서울서초-0647<br/>
+                / 개인정보보호책임자 : 우승용
+                </p>
+                <p id="end">Copyright ⓒLUSHKOREA co, Ltd. All rights reserved.</p>
+                <a href="#">구매안전 서비스 가입확인</a>
+            </div>
+            <div id="info_right">
+                <!-- footer nav -->
+                <div id="navi">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li>|</li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li>|</li>
+                        <li><a href="#">이용약관</a></li>
+                        <li>|</li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li>|</li>
+                        <li><a href="#">판매약관</a></li>
+                        <li>|</li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <!-- footer info (전화번호, 시간, 메일) -->
+                <ul id="footer_top">
+                    <li>
+                        <i class="fa fa-phone"></i>
+                        <p>TEL : 1644 - 2357<br/>
+                        FAX : 02 - 795 - 7516</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <p>월 ~ 금 : 10:00 ~ 18:00<br/>
+                        점심시간 : 11:50 ~ 13:00</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <p>문의메일<br/>
+                        webmaster@lush.co.kr</p>
+                    </li>
+                </ul>
+                <!-- SNS icon -->
+                <ul class="footer_icon">
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-youtube"></i></li>
+                    <li><i class="fab fa-blogger"></i></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Lush Movie -->
+        <div id="footer_right">
+            <iframe src="https://www.youtube.com/embed/6D8h2PJWs74?ecver=2" width="280" height="180" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </footer>
+    <a href="#0" class="cd-top">Top</a>
+
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/script.js" type="text/javascript"></script>
+    <script src="./js/product.js" type="text/javascript"></script>
+</body>
+</html>

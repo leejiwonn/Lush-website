@@ -1,0 +1,370 @@
+/* --------- font */
+
+@font-face {
+    font-family: 'Lush-Regular';
+    src: url('Lush-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Lush';
+    src: url('Lush.eot');
+    src: url('Lush.woff2') format('woff2'),
+         url('Lush.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }  
+
+  @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+
+/* 구글에서 CSS3 reset 2018 검색 */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* -------------- 초기화 */
+
+body{
+    width: 100%;
+    font-size: 12px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ------------top */
+
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.02);
+}
+
+/* logo */
+header a.logo {
+    display: block;
+    width: 120px;
+    height: 45px;
+    margin-top: 17px;
+    margin-left: 30px;
+}
+header .logo img{
+    position: relative;
+}
+
+/* main_menu */
+#main_menu{
+    width: 80%;
+    position: absolute;
+    top: 25px;
+    left: 250px;
+    font-size: 17px;
+    font-weight: 800;
+    text-align: center;
+}
+#main_menu li{
+    display: block;
+    width: 8.5%;
+    float: left;
+    position: relative;
+    line-height: 30px;
+    cursor: pointer;
+}
+#main_menu li:nth-child(1):hover{
+    border-bottom: 2px solid black;
+}
+#main_menu li:hover{
+    border-top: 2px solid black;
+    box-sizing: border-box;
+}
+#main_menu li a{
+    color: black;
+}
+#main_menu li a:hover{
+    color: green;
+}
+
+/*li 안의 li sub*/
+#main_menu li li {
+    display: block;
+    position: relative;
+    float: none;
+    font-size: 12px;
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+}
+#main_menu li:hover li {
+    color: black;
+    border-top: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+#main_menu li:hover li:nth-child(1):hover{
+    border-bottom: 0;
+}
+#main_menu li:hover li:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+#main_menu li ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-top:10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: translateY(100%);
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+#main_menu li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+}
+
+/* search */
+header #search{
+    position: absolute;
+    top:30px;
+    right: 4.6%;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+/* top */
+.cd-top {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: rgba(83, 121, 78, 0.8) url(https://codyhouse.co/demo/back-to-top/img/cd-top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .cd-top.cd-is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  .cd-top.cd-fade-out {
+    opacity: .5;
+  }
+  .no-touch .cd-top:hover {
+    background-color: #e86256;
+    opacity: 1;
+  }
+
+/* --------- footer */
+
+footer{
+    position: relative;
+    top:0;
+    left: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 280px;
+}
+
+/* footer_left */
+#footer_left{
+    float: left;
+    width: 70%;
+    height: 280px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* footer_left. left */
+#footer_left #info_left{
+    position: absolute;
+    left: 40px;
+    top: 50px;
+}
+#footer_left #info_left p{
+    font-size: 10px;
+    line-height: 17px;
+    color:gray;
+}
+#footer_left #info_left #end{
+    color: white;
+    margin-top: 10px;
+}
+#footer_left #info_left a{
+    color: white;
+    display:block;
+    width: 200px;
+    height: 35px;
+    line-height: 29px;
+    border-radius: 100px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    text-align: center;
+    transition-duration: 0.7s;
+    font-size: 8pt;
+    font-weight: 900;
+    margin-top: 35px;
+}
+#footer_left #info_left a:hover {
+    background: white;
+    color: black;
+}
+
+/* footer_left. right */
+#footer_left #info_right{
+    position: relative;
+    left: 250px;
+    top: 0;
+    width: 800px;
+    height: 280px;
+}
+
+/* footer_left. top */
+#info_right #navi{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 19%;
+    left: 12%;
+    font-size: 15px;
+    font-weight: 900;
+}
+#info_right #navi li{
+    display: inline;
+    padding: 0 5px;
+}
+#info_right #navi li a{
+    color: white;
+    transition: all 0.3s;
+}
+#info_right #navi li a:hover{
+    color: gray;
+}
+
+/* footer_top */
+#footer_top{
+    width: 800px;
+    height: 170px;
+    position: absolute;
+    top: 33%;
+    left: 8%;
+}
+footer #footer_top li{
+    width: 31.5%;
+    height: 170px;
+    line-height: 200px;
+    float: left;
+    position: relative;
+}
+#footer_top i{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-size: 35px;
+}
+#footer_top p {
+    position: absolute;
+    top: 14%;
+    left: 32%;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+/* icon */
+.footer_icon{
+    width: 800px;
+    height: 50px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+.footer_icon li{
+    display: inline;
+    font-size: 20pt;
+    padding: 0 10px;
+}
+.footer_icon li i{
+    transition: all 0.3s;
+}
+.footer_icon li i:hover{
+    color:gray;
+    cursor: pointer;
+}
+
+/* footer_right */
+#footer_right{
+    width: 28%;
+    float: right;
+    position: relative;
+    top: 50px;
+    right: -10px;
+    text-align: center;
+    border-left: 3px dashed white;
+}
